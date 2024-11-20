@@ -13,6 +13,3 @@ and we are here to find out what happened.
 - Give the branches and commits clear names so if something breaks it is an easier fix
 - Prefix the names of brances with your own name so it stays clear which branch is whose
 - No one works on the main
-
-
-je pa
