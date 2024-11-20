@@ -18,7 +18,7 @@ and we are here to find out what happened.
 # Rolverdeeling: 
 -	Marten: Tester en project manager
 -	Rick: Designer en schrijver
--	Christiaan: Developer
+-	Christian: Developer
 -	Sylvan: Audio design en mascotte
 -	Edgar: Developer
 -	Rik: Developer 
@@ -26,7 +26,7 @@ and we are here to find out what happened.
 # Locatie:
 -	Marten: School
 -	Rick: Bibliotheek en map(index) pagina
--	Christiaan: Kerk
+-	Christian: Kerk
 -	Sylvan: Begraafplaats en cult gebouw
 -	Edgar: 
 -	Rik: Boerderij
@@ -34,7 +34,7 @@ and we are here to find out what happened.
 # Website plannen:
 -	Marten: Text based adventure 
 -	Rick:
--	Christiaan:
+-	Christian:
 -	Sylvan: Hier komen datums op te staan van overleden personen en de terminal.
 -	Edgar:
 -	Rik: Een deel van de website wordt een slachterij deze hebben altijd samen gewerkt met de cult om de mensen voor te bereiden voor de sacrifices.
