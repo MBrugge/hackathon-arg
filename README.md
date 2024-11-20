@@ -16,9 +16,6 @@ and we are here to find out what happened.
 
 # Role Division:
 
-<<<<<<< Updated upstream
-je pa
-=======
 - Marten: Tester and project manager
 - Rick: Designer and writer
 - Christiaan: Developer
@@ -47,4 +44,4 @@ je pa
 # Notes
 
 - A fake god created by the cult to receive sacrifices in exchange for eternal life in a computer.
->>>>>>> Stashed changes
+
