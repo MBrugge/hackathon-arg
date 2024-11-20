@@ -15,7 +15,7 @@ and we are here to find out what happened.
 - No one works on the main
 
 
-# Rolverdeeling: 
+# Rolverdeling: 
 -	Marten: Tester en project manager
 -	Rick: Designer en schrijver
 -	Christian: Developer
@@ -34,7 +34,10 @@ and we are here to find out what happened.
 # Website plannen:
 -	Marten: Text based adventure 
 -	Rick:
--	Christian:
+-	Christian: Church for cult religion:
+    - describing rituals with sacrifices |-> farm;
+    - info about god (-> Rick for story),
+    - contact with spirits (?)
 -	Sylvan: Hier komen datums op te staan van overleden personen en de terminal.
 -	Edgar:
 -	Rik: Een deel van de website wordt een slachterij deze hebben altijd samen gewerkt met de cult om de mensen voor te bereiden voor de sacrifices.
