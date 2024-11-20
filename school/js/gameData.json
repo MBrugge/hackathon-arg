@@ -1,7 +1,7 @@
 {
     "start": {
-        "title": "Dark Room",
-        "text": "You are standing in a dark room. There is a door to your left and right.",
+        "title": "Lobby",
+        "text": "You have entered the glass doors and are now standing in the lobby of the school. On your left is a large corkboard with papers and flyers on it. In front of you is a long hallway with lockers on either side",
         "choices": [
             {
                 "text": "Go left",

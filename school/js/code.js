@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gameText = document.getElementById('game-text');
     const choices = document.getElementById('choices');
-    const choiceDisplay = document.createElement('div');
-    choiceDisplay.id = 'choice-display';
-    choiceDisplay.className = 'text-center text-white';
-    gameText.parentNode.insertBefore(choiceDisplay, gameText);
+    const titleDisplay = document.getElementById('title-display');
     let gameData = {};
 
     fetch('./js/gameData.json')
@@ -14,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
             updateGame('start');
         });
 
-    function createButton(choice) {
+    function createButton(choice, index) {
         const button = document.createElement('button');
-        button.innerText = choice.text;
-        button.className = 'bg-blue-500 text-white py-1 px-4 rounded';
+        button.innerText = `${index + 1}) ${choice.text}`;
+        button.className = 'bg-gray-900 text-white py-1 px-4 rounded w-4/5 text-start';
         button.addEventListener('click', () => {
             updateGame(choice.nextState);
         });
@@ -26,12 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateGame(state) {
         const currentState = gameData[state];
-        choiceDisplay.innerHTML = `<h2 class="inline-block px-4 text-2xl font-bold border-y">${currentState.title}</h2>`;
+        titleDisplay.innerHTML = `<h2 class="inline-block px-4 text-2xl font-bold border-y">${currentState.title}</h2>`;
         gameText.innerText = currentState.text;
         choices.innerHTML = '';
-        currentState.choices.forEach(choice => {
-            const button = createButton(choice);
+        currentState.choices.forEach((choice, index) => {
+            const button = createButton(choice, index);
             choices.appendChild(button);
         });
     }
+
+    document.addEventListener('keydown', (event) => {
+        const key = event.key;
+        const currentState = gameData[document.querySelector('#title-display h2').innerText];
+        if (key >= '1' && key <= currentState.choices.length.toString()) {
+            const choiceIndex = parseInt(key, 10) - 1;
+            updateGame(currentState.choices[choiceIndex].nextState);
+        }
+    });
 });
