@@ -26,32 +26,32 @@ body {
 }
 
 /* Positioning the spots */
-#spot1 {
-    top: 28%;
-    left: 30%;
+#library {
+    top: 16%;
+    left: 35%;
 }
 
-#spot2 {
-    top: 24%;
-    right: 46%;
+#graveyard {
+    top: 11%;
+    right: 47%;
 }
 
-#spot3 {
-    bottom: 28%;
-    left: 17%;
+#school {
+    bottom: 34%;
+    left: 24%;
 }
 
-#spot4 {
-    bottom: 12%;
+#kerk {
+    bottom: 16%;
     right: 53%;
 }
 
-#spot5 {
-    top: 68%;
-    left: 63%;
+#cult {
+    top: 62%;
+    left: 61%;
 }
 
-#spot6 {
-    top: 37%;
-    left: 68%;
+#farm {
+    top: 26%;
+    left: 66%;
 }
