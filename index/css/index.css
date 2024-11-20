@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    background-image: url('/index/img/yesbuildings.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.spot {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #fff;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.spot:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Positioning the spots */
+#library {
+    top: 16%;
+    left: 35%;
+}
+
+#graveyard {
+    top: 11%;
+    right: 47%;
+}
+
+#school {
+    bottom: 34%;
+    left: 24%;
+}
+
+#kerk {
+    bottom: 16%;
+    right: 53%;
+}
+
+#cult {
+    top: 62%;
+    left: 61%;
+}
+
+#farm {
+    top: 26%;
+    left: 66%;
+}
