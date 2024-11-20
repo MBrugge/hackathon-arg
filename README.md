@@ -32,7 +32,7 @@ and we are here to find out what happened.
 -	Rik: Boerderij
 
 # Website plannen:
--	Marten: Text based adventure 
+-	Marten: Text based adventure - Dilapidated school with suspiciously clean nurses office. From principals pc a clue about a secret entrance is revealed which shows a cyborg body horror person which when disabled(killed) reveals a code for the terminal
 -	Rick:
 -	Christian:
 -	Sylvan: Hier komen datums op te staan van overleden personen en de terminal.
