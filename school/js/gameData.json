@@ -1,0 +1,128 @@
+{
+    "start": {
+        "title": "Dark Room",
+        "text": "You are standing in a dark room. There is a door to your left and right.",
+        "choices": [
+            {
+                "text": "Go left",
+                "nextState": "leftRoom"
+            },
+            {
+                "text": "Go right",
+                "nextState": "rightRoom"
+            }
+        ]
+    },
+    "leftRoom": {
+        "title": "Left Room",
+        "text": "You went left. You see a window and a staircase.",
+        "choices": [
+            {
+                "text": "Go back",
+                "nextState": "start"
+            },
+            {
+                "text": "Go forward",
+                "nextState": "forwardRoom"
+            }
+        ]
+    },
+    "rightRoom": {
+        "title": "Right Room",
+        "text": "You went right. You see a painting and a door.",
+        "choices": [
+            {
+                "text": "Go back",
+                "nextState": "start"
+            },
+            {
+                "text": "Go forward",
+                "nextState": "forwardRoom"
+            }
+        ]
+    },
+    "forwardRoom": {
+        "title": "Forward Room",
+        "text": "You are in a new room with more choices.",
+        "choices": [
+            {
+                "text": "Option 1",
+                "nextState": "option1Room"
+            },
+            {
+                "text": "Option 2",
+                "nextState": "option2Room"
+            }
+        ]
+    },
+    "option1Room": {
+        "title": "Option 1 Room",
+        "text": "You chose option 1. You see a treasure chest.",
+        "choices": [
+            {
+                "text": "Open the chest",
+                "nextState": "chestRoom"
+            },
+            {
+                "text": "Leave the room",
+                "nextState": "start"
+            }
+        ]
+    },
+    "option2Room": {
+        "title": "Option 2 Room",
+        "text": "You chose option 2. You see a sleeping dragon.",
+        "choices": [
+            {
+                "text": "Fight the dragon",
+                "nextState": "fightRoom"
+            },
+            {
+                "text": "Sneak past the dragon",
+                "nextState": "sneakRoom"
+            }
+        ]
+    },
+    "chestRoom": {
+        "title": "Chest Room",
+        "text": "You opened the chest and found gold!",
+        "choices": [
+            {
+                "text": "Take the gold",
+                "nextState": "start"
+            },
+            {
+                "text": "Leave the gold",
+                "nextState": "start"
+            }
+        ]
+    },
+    "fightRoom": {
+        "title": "Fight Room",
+        "text": "You fought the dragon and won!",
+        "choices": [
+            {
+                "text": "Celebrate",
+                "nextState": "start"
+            },
+            {
+                "text": "Rest",
+                "nextState": "start"
+            }
+        ]
+    },
+    "sneakRoom": {
+        "title": "Sneak Room",
+        "text": "You sneaked past the dragon and found an exit.",
+        "choices": [
+            {
+                "text": "Exit the cave",
+                "nextState": "start"
+            },
+            {
+                "text": "Go back",
+                "nextState": "option2Room"
+            }
+        ]
+    }
+}
