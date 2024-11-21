@@ -47,7 +47,7 @@
     },
     "hallwayPrincipal": {
         "title": "Hallway towards the principal's office",
-        "text": "You walk down the hallway and directly ahead of you is the principal's office. As you walk you pass some classrooms, some tidier than others, but there is nothing of interest withing them.\n\nYou reach the door of the office but you cannot see what is behind the door since there is no window. There is no damage that you notice other than wear and tear from age.",
+        "text": "You walk down the hallway and directly ahead of you is the principal's office. As you walk you pass some classrooms, some tidier than others, but there is nothing of interest within them.\n\nYou reach the door of the office but you cannot see what is behind the door since there is no window. There is no damage that you notice other than wear and tear from age.",
         "choices": [
             {
                 "text": "Open the door and enter the office",
@@ -61,7 +61,7 @@
     },
     "officePrincipal": {
         "title": "Principal's office",
-        "text": "You enter the office and notice many awards on the walls. Whoever was the last principal was a very smart person. They had multiple doctorates specifically in the medical en technological field.\n\nYou see a computer on the desk which appears to be powered according to a light that flashing below the screen. The computer has a post-it note sticking at the edge of the screen.",
+        "text": "You enter the office and notice many awards on the walls. Whoever was the last principal was a very smart person. They had multiple doctorates specifically in the medical and technological fields.\n\nYou see a computer on the desk which appears to be powered according to a light that is flashing below the screen. The computer has a post-it note sticking at the edge of the screen.",
         "choices": [
             {
                 "text": "Inspect the post-it note",
@@ -79,9 +79,19 @@
             }
         ]
     },
+    "computerOn": {
+        "title": "Computer",
+        "text": "You were about to give up after two minutes of waiting but just as you were about to leave it turned on! You see an old and basic admin page for the school although most of the data is unavailable since the server isn't connected.\n\n After digging deeper in the files of what you can find and access, you find a note connecting the principal to a tech cult. With that note was also a code '1731'.",
+        "choices": [
+            {
+                "text": "Go back",
+                "nextState": "officePrincipal"
+            }
+        ]
+    },
     "inspectSticky": {
         "title": "Post-it note",
-        "text": "The post-it says. 'Remember her last'.",
+        "text": "The post-it says, 'Remember her last.'",
         "choices": [
             {
                 "text": "Go back",
@@ -91,7 +101,7 @@
     },
     "hallwayClassrooms": {
         "title": "Hallway to the classrooms",
-        "text": "You walk down the shorter hallway that has two doors on either sides that lead into classroom. Everything in the hallway is just a rundown as the rest of the building.The classrooms are much of the same without anything of interest.",
+        "text": "You walk down the shorter hallway that has two doors on either side that lead into classrooms. Everything in the hallway is just as rundown as the rest of the building. The classrooms are much of the same without anything of interest.",
         "choices": [
             {
                 "text": "Go back to the previous hallway",
@@ -130,7 +140,7 @@
     },
     "code": {
         "title": "Code",
-        "text": "The shattered man notices your intention, and a sad smile crosses his face. You see him mouth 'Wait' as he scratches another message onto the wall: 'Remember BRAINS.' Once finished, he nods towards the message and closes his eyes, waiting for you to end his suffering. You walk up behind him and stop the system powering his clockwork heart.",
+        "text": "The shattered man notices your intention, and a sad smile crosses his face. You see him mouth 'Wait' as he scratches another message onto the wall: 'Remember Cerebellum.' Once finished, he nods towards the message and closes his eyes, waiting for you to end his suffering. You walk up behind him and stop the system powering his clockwork heart.",
         "choices": [
             {
                 "text": "Leave",

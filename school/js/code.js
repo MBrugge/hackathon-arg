@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const titleDisplay = document.getElementById('title-display');
     let gameData = {};
     let currentState = 'start';
-    const secretCode = '1984'; // Existing code
-    const computerCode = '120589'; // New code for the computer
+    const secretCode = '1731'; 
+    const computerCode = '120589';
 
     fetch('./js/gameData.json')
         .then(response => response.json())
