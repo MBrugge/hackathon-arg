@@ -1,127 +1,86 @@
 {
     "start": {
         "title": "Lobby",
-        "text": "You have entered the glass doors and are now standing in the lobby of the school. On your left is a large corkboard with papers and flyers on it. In front of you is a long hallway with lockers on either side",
+        "text": "You have entered through the glass doors and are now standing in the lobby of the school. It is evident that there haven't been any cleaners here for a while, but the place is not falling apart.\n\nTo your left is a large corkboard with papers and flyers pinned to it. In front of you is a long hallway with lockers on either side.",
         "choices": [
             {
-                "text": "Go left",
-                "nextState": "leftRoom"
+                "text": "Look at the corkboard",
+                "nextState": "corkboard"
             },
             {
-                "text": "Go right",
-                "nextState": "rightRoom"
+                "text": "Go forward into the hallway",
+                "nextState": "longHallway"
             }
         ]
     },
-    "leftRoom": {
-        "title": "Left Room",
-        "text": "You went left. You see a window and a staircase.",
+    "corkboard": {
+        "title": "Corkboard",
+        "text": "You examine the corkboard and see numerous papers and flyers pinned to it. There are some 'Missing Children' posters and general news articles. There is also a flyer for an autumn prom that looks rather lovely.",
         "choices": [
             {
-                "text": "Go back",
-                "nextState": "start"
-            },
-            {
-                "text": "Go forward",
-                "nextState": "forwardRoom"
-            }
-        ]
-    },
-    "rightRoom": {
-        "title": "Right Room",
-        "text": "You went right. You see a painting and a door.",
-        "choices": [
-            {
-                "text": "Go back",
-                "nextState": "start"
-            },
-            {
-                "text": "Go forward",
-                "nextState": "forwardRoom"
-            }
-        ]
-    },
-    "forwardRoom": {
-        "title": "Forward Room",
-        "text": "You are in a new room with more choices.",
-        "choices": [
-            {
-                "text": "Option 1",
-                "nextState": "option1Room"
-            },
-            {
-                "text": "Option 2",
-                "nextState": "option2Room"
-            }
-        ]
-    },
-    "option1Room": {
-        "title": "Option 1 Room",
-        "text": "You chose option 1. You see a treasure chest.",
-        "choices": [
-            {
-                "text": "Open the chest",
-                "nextState": "chestRoom"
-            },
-            {
-                "text": "Leave the room",
+                "text": "Go back to the lobby",
                 "nextState": "start"
             }
         ]
     },
-    "option2Room": {
-        "title": "Option 2 Room",
-        "text": "You chose option 2. You see a sleeping dragon.",
+    "longHallway": {
+        "title": "Long Hallway",
+        "text": "You proceed along a long, straight hallway. On either side of you are lockers, some open yet empty. A series of lamps light up the hallway, although some are broken or flickering. You notice more signs of age and wear, as well as indications of animals having moved in.\n\nYou reach a junction in the hallway. To your left is a door to the nurse's office. To your right is another hallway that leads towards the principal's office. Straight ahead is a shorter hallway that connects to some classrooms.",
         "choices": [
             {
-                "text": "Fight the dragon",
-                "nextState": "fightRoom"
+                "text": "Enter the nurse's office on your left",
+                "nextState": "nursesOffice"
             },
             {
-                "text": "Sneak past the dragon",
-                "nextState": "sneakRoom"
-            }
-        ]
-    },
-    "chestRoom": {
-        "title": "Chest Room",
-        "text": "You opened the chest and found gold!",
-        "choices": [
-            {
-                "text": "Take the gold",
-                "nextState": "start"
+                "text": "Go straight towards the classrooms",
+                "nextState": "hallwayClassrooms"
             },
             {
-                "text": "Leave the gold",
+                "text": "Turn right towards the principal's office",
+                "nextState": "hallwayPrincipal"
+            },
+            {
+                "text": "Go back to the lobby",
                 "nextState": "start"
             }
         ]
     },
-    "fightRoom": {
-        "title": "Fight Room",
-        "text": "You fought the dragon and won!",
+    "nursesOffice": {
+        "title": "Nurse's Office",
+        "text": "You enter a squeaky clean nurse's office. It looks as if it was cleaned perhaps a few hours ago. Everything is perfectly orderly and organized, despite the fact that no living soul has been here in years.\n\nOn one side, you notice a door with a window where you can see a staircase leading down to a basement of some sort. The door has a combination lock, but you aren't certain where the code could be.",
         "choices": [
             {
-                "text": "Celebrate",
-                "nextState": "start"
+                "text": "Descend into the basement",
+                "nextState": "basement",
+                "requiresCode": true
             },
             {
-                "text": "Rest",
-                "nextState": "start"
+                "text": "Go back to the hallway",
+                "nextState": "longHallway"
             }
         ]
     },
-    "sneakRoom": {
-        "title": "Sneak Room",
-        "text": "You sneaked past the dragon and found an exit.",
+    "basement": {
+        "title": "Basement",
+        "text": "You descend into an equally spotless basement, towards a light with a wire hanging from it. As you pull on the wire to turn on the light, you hear something move in the darkness ahead. You turn on the light, revealing shelves lining the walls, filled with jars containing brains. There are at least fifty of them.\n\nAt the far end of the basement, you see what made the noise: an abomination. A man cruelly merged with metal, with large blades protruding from various parts of his flesh. Crude clockwork mechanisms are fitted to his joints, and he looks up at you with fear and shame.\n\nHe tries to speak, but you can see scars where his vocal cords once were. With jerky movements, he points to a message scratched into the wall: 'I don't know who I am or how long I have been here. I am in constant pain. If anyone reads this, please put me out of my misery.' He looks at you with pleading eyes, hoping you will fulfill his request.",
         "choices": [
             {
-                "text": "Exit the cave",
-                "nextState": "start"
+                "text": "Disable the abomination",
+                "nextState": "code"
             },
             {
-                "text": "Go back",
-                "nextState": "option2Room"
+                "text": "Go back to the nurse's office",
+                "nextState": "nursesOffice"
+            }
+        ]
+    },
+    "code": {
+        "title": "Code",
+        "text": "The shattered man notices your intention, and a sad smile crosses his face. You see him mouth 'Wait' as he scratches another message onto the wall: 'Remember BRAINS.' Once finished, he nods towards the message and closes his eyes, waiting for you to end his suffering. You walk up behind him and stop the system powering his clockwork heart.",
+        "choices": [
+            {
+                "text": "Leave",
+                "action": "redirect"
             }
         ]
     }
