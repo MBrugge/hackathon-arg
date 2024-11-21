@@ -45,6 +45,60 @@
             }
         ]
     },
+    "hallwayPrincipal": {
+        "title": "Hallway towards the principal's office",
+        "text": "You walk down the hallway and directly ahead of you is the principal's office. As you walk you pass some classrooms, some tidier than others, but there is nothing of interest withing them.\n\nYou reach the door of the office but you cannot see what is behind the door since there is no window. There is no damage that you notice other than wear and tear from age.",
+        "choices": [
+            {
+                "text": "Open the door and enter the office",
+                "nextState": "officePrincipal"
+            },
+            {
+                "text": "Go back to the previous hallway",
+                "nextState": "longHallway"
+            }
+        ]
+    },
+    "officePrincipal": {
+        "title": "Principal's office",
+        "text": "You enter the office and notice many awards on the walls. Whoever was the last principal was a very smart person. They had multiple doctorates specifically in the medical en technological field.\n\nYou see a computer on the desk which appears to be powered according to a light that flashing below the screen. The computer has a post-it note sticking at the edge of the screen.",
+        "choices": [
+            {
+                "text": "Inspect the post-it note",
+                "nextState": "inspectSticky"
+            },
+            {
+                "text": "Turn on the computer",
+                "nextState": "computerOn",
+                "requiresCode": true,
+                "codeType": "computer"
+            },
+            {
+                "text": "Go back out into the hallway",
+                "nextState": "hallwayPrincipal"
+            }
+        ]
+    },
+    "inspectSticky": {
+        "title": "Post-it note",
+        "text": "The post-it says. 'Remember her last'.",
+        "choices": [
+            {
+                "text": "Go back",
+                "nextState": "officePrincipal"
+            }
+        ]
+    },
+    "hallwayClassrooms": {
+        "title": "Hallway to the classrooms",
+        "text": "You walk down the shorter hallway that has two doors on either sides that lead into classroom. Everything in the hallway is just a rundown as the rest of the building.The classrooms are much of the same without anything of interest.",
+        "choices": [
+            {
+                "text": "Go back to the previous hallway",
+                "nextState": "longHallway"
+            }
+        ]
+    },
     "nursesOffice": {
         "title": "Nurse's Office",
         "text": "You enter a squeaky clean nurse's office. It looks as if it was cleaned perhaps a few hours ago. Everything is perfectly orderly and organized, despite the fact that no living soul has been here in years.\n\nOn one side, you notice a door with a window where you can see a staircase leading down to a basement of some sort. The door has a combination lock, but you aren't certain where the code could be.",
