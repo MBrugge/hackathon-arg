@@ -81,10 +81,7 @@ b {
 }
 #liner::before {
   color: var(--gray);
-  content: "visitor@fkcodes.com:~$";
-}
-#liner.password::before {
-  content: "Password:";
+  content: "admin@cyberliberi.com:~$";
 }
 @keyframes show {
   from {
