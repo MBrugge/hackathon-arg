@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const titleDisplay = document.getElementById('title-display');
     let gameData = {};
     let currentState = 'start';
-    const secretCode = '1984';
+    const secretCode = '1984'; // Existing code
+    const computerCode = '120589'; // New code for the computer
 
     fetch('./js/gameData.json')
         .then(response => response.json())
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (choice.action === 'redirect') {
                 window.location.href = '../index.html';
             } else if (choice.requiresCode) {
-                promptForCode(choice.nextState);
+                promptForCode(choice.nextState, choice.codeType);
             } else {
                 updateGame(choice.nextState);
             }
@@ -29,17 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
         return button;
     }
 
-    function promptForCode(nextState) {
+    function promptForCode(nextState, codeType) {
         const codeInput = document.createElement('input');
         codeInput.type = 'text';
-        codeInput.placeholder = 'Enter 4-digit code';
+        codeInput.placeholder = 'Enter code';
         codeInput.className = 'bg-gray-700 text-white py-1 px-4 rounded w-full text-start mb-2';
 
         const submitButton = document.createElement('button');
         submitButton.innerText = 'Submit';
         submitButton.className = 'bg-gray-900 text-white py-1 px-4 rounded w-full text-start';
         submitButton.addEventListener('click', () => {
-            if (codeInput.value === secretCode) {
+            let correctCode = false;
+            if (codeType === 'computer') {
+                correctCode = codeInput.value === computerCode;
+            } else {
+                correctCode = codeInput.value === secretCode;
+            }
+
+            if (correctCode) {
                 updateGame(nextState);
                 document.addEventListener('keydown', handleKeydown);
             } else {
@@ -73,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const choiceIndex = parseInt(key, 10) - 1;
             const choice = stateData.choices[choiceIndex];
             if (choice.requiresCode) {
-                promptForCode(choice.nextState);
+                promptForCode(choice.nextState, choice.codeType);
             } else {
                 updateGame(choice.nextState);
             }
