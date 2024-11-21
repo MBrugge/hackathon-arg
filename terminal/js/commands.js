@@ -1,5 +1,6 @@
 var quit = "../index.html";
 var cerebellum = "../notes/cerebellum.html";
+var rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 var linkedin = "https://www.linkedin.com/in/forrestpknight/";
 var instagram = "https://www.instagram.com/forrestpknight/";
 var github = "https://github.com/forrestknight/";

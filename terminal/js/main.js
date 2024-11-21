@@ -102,6 +102,10 @@ function commander(cmd) {
       addLine("Connecting...", "color2", 80);
       newTab(cerebellum);
       break;
+    case (cmd.toLowerCase()).startsWith("sudo") ? (cmd.toLowerCase()) : "":
+      addLine("Not allowed to run sudo: missing permissions", "error", 80);
+      newTab(rickroll)
+      break;
     case "scripture":
       addLine("Connecting...", "color2", 80);
       newTab(twitter);
